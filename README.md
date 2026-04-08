@@ -2,7 +2,7 @@
 
 Authentic Indian Flavors, Cinematic Experience
 
-A premium single-page restaurant website for Rasa Kitchen — 
+A premium  restaurant website for Rasa Kitchen — 
 an authentic Indian meal brand that brings restaurant-quality 
 dishes to your home with a modern, cinematic presentation.
 
@@ -53,3 +53,6 @@ npm run dev
 - Ezgif — MP4 to WebP conversion
 - Firebase Studio — website code generation
 - Google Gemini — dish photography images
+
+  LIVE DEMO:
+  https://meal-one-rose.vercel.app/
