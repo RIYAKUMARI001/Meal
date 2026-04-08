@@ -3,26 +3,26 @@
   "placeholderImages": [
     {
       "id": "saffron-rice",
-      "description": "3D rendered golden saffron rice bowl on black background",
-      "imageUrl": "https://picsum.photos/seed/saffron-rice/800/800",
+      "description": "Fragrant Saffron Biryani Style Rice",
+      "imageUrl": "https://raw.githubusercontent.com/RIYAKUMARI001/Meal/main/biryani.png",
       "imageHint": "saffron rice"
     },
     {
       "id": "aloo-sabzi",
-      "description": "3D rendered spiced potato curry in brass bowl on black background",
-      "imageUrl": "https://picsum.photos/seed/aloo-sabzi/800/800",
+      "description": "Authentic Spiced Potato Aloo Sabzi",
+      "imageUrl": "https://raw.githubusercontent.com/RIYAKUMARI001/Meal/main/Aloosabji.png",
       "imageHint": "potato curry"
     },
     {
-      "id": "chef-portrait",
-      "description": "Indian chef preparing food with passion",
-      "imageUrl": "https://picsum.photos/seed/chef/800/1000",
-      "imageHint": "indian chef"
+      "id": "chicken-korma",
+      "description": "Rich and Creamy Mughlai Chicken Korma",
+      "imageUrl": "https://raw.githubusercontent.com/RIYAKUMARI001/Meal/main/Gemini_Generated_Image_9484919484919484.png",
+      "imageHint": "chicken korma"
     },
     {
       "id": "heritage-feast",
-      "description": "Royal Indian feast with curry and saffron rice in a heritage setting",
-      "imageUrl": "https://picsum.photos/seed/indian-feast-royal/800/1200",
+      "description": "Royal Indian Heritage Feast",
+      "imageUrl": "https://raw.githubusercontent.com/RIYAKUMARI001/Meal/main/Screenshot%202026-04-09%20021431.png",
       "imageHint": "indian feast"
     }
   ]

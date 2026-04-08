@@ -27,8 +27,8 @@ export function About() {
         </div>
         
         {/* Image Column - Full Height with Rounded Corners */}
-        <div className="relative h-full min-h-[600px] w-full p-6 md:p-10">
-          <div className="relative h-full w-full rounded-[3rem] overflow-hidden group border border-white/10 shadow-2xl">
+        <div className="relative h-full min-h-[600px] w-full p-4 md:p-6 lg:p-8">
+          <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden group border border-white/10 shadow-2xl">
             {heritageImage && (
               <Image
                 src={heritageImage.imageUrl}
@@ -39,7 +39,7 @@ export function About() {
                 priority
               />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-30" />
           </div>
         </div>
       </div>

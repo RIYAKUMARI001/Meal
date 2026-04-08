@@ -10,8 +10,8 @@ const menuItems = [
     name: "CHICKEN KORMA",
     subtitle: "Mughlai Classic",
     description: "A rich aromatic curry with tender chicken in creamy cashew saffron sauce, garnished with almonds and curry leaves.",
-    image: "https://raw.githubusercontent.com/RIYAKUMARI001/Meal/main/karahi.webp",
-    isWebp: true
+    image: PlaceHolderImages.find(img => img.id === "chicken-korma")?.imageUrl,
+    imageHint: "chicken korma"
   },
   {
     id: 2,
@@ -43,12 +43,14 @@ export function Menu() {
         {menuItems.map((item) => (
           <Card key={item.id} className="bg-card border-white/5 overflow-hidden group hover:border-primary/30 transition-all duration-500">
             <div className="relative aspect-square overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                data-ai-hint={item.imageHint}
-              />
+              {item.image && (
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-ai-hint={item.imageHint}
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
             </div>
             <CardContent className="p-8 space-y-4">
