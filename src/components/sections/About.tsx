@@ -3,14 +3,15 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function About() {
-  const chefImage = PlaceHolderImages.find(img => img.id === "chef-portrait");
+  const heritageImage = PlaceHolderImages.find(img => img.id === "heritage-feast");
 
   return (
-    <section id="about" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-2 gap-16 items-center">
-        <div className="space-y-8">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary">Our Story</h2>
-          <div className="space-y-6 font-body text-lg leading-relaxed text-muted-foreground">
+    <section id="about" className="max-w-7xl mx-auto overflow-hidden">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
+        {/* Text Column */}
+        <div className="py-24 px-6 md:pl-12 md:pr-0 space-y-8 flex flex-col justify-center">
+          <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold text-primary">Our Story</h2>
+          <div className="space-y-6 font-body text-lg leading-relaxed text-muted-foreground max-w-xl">
             <p>
               At Rasa Kitchen, we believe that food is not just nourishment—it's a story told through fire, spice, and heritage. Our journey began with a simple mission: to preserve the soul of authentic Indian cooking while presenting it with a modern, cinematic elegance that captures the imagination.
             </p>
@@ -22,17 +23,20 @@ export function About() {
             </p>
           </div>
         </div>
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl group">
-          {chefImage && (
+        
+        {/* Image Column */}
+        <div className="relative h-full min-h-[600px] w-full md:rounded-l-[3rem] overflow-hidden group">
+          {heritageImage && (
             <Image
-              src={chefImage.imageUrl}
-              alt={chefImage.description}
+              src={heritageImage.imageUrl}
+              alt={heritageImage.description}
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110"
-              data-ai-hint={chefImage.imageHint}
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+              data-ai-hint={heritageImage.imageHint}
             />
           )}
-          <div className="absolute inset-0 ring-1 ring-primary/20 rounded-2xl" />
+          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-black/20" />
+          <div className="absolute inset-0 ring-1 ring-primary/10 md:rounded-l-[3rem]" />
         </div>
       </div>
     </section>

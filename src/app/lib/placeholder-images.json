@@ -18,6 +18,12 @@
       "description": "Indian chef preparing food with passion",
       "imageUrl": "https://picsum.photos/seed/chef/800/1000",
       "imageHint": "indian chef"
+    },
+    {
+      "id": "heritage-feast",
+      "description": "Royal Indian feast with curry and saffron rice in a heritage setting",
+      "imageUrl": "https://picsum.photos/seed/heritage-feast/800/1200",
+      "imageHint": "indian feast"
     }
   ]
 }
