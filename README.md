@@ -34,21 +34,6 @@ dishes to your home with a modern, cinematic presentation.
 
 ---
 
-## Design
-
-Background: #000000 Pure Black  
-Accent Color: #FF9933 Saffron Gold  
-Theme: Dark Mode Only
-
----
-
-## Menu
-
-Chicken Korma — Mughlai Classic  
-Saffron Rice — Fragrant Biryani Style  
-Aloo Sabzi — Spiced Potato Delight
-
----
 
 ## Getting Started
 
