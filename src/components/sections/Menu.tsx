@@ -1,33 +1,30 @@
 
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Image from "next/image";
 
 const menuItems = [
   {
-    id: 1,
+    id: "chicken-korma",
     name: "CHICKEN KORMA",
     subtitle: "Mughlai Classic",
     description: "A rich aromatic curry with tender chicken in creamy cashew saffron sauce, garnished with almonds and curry leaves.",
-    image: PlaceHolderImages.find(img => img.id === "chicken-korma")?.imageUrl,
-    imageHint: "chicken korma"
+    image: PlaceHolderImages.find(img => img.id === "chicken-korma"),
   },
   {
-    id: 2,
+    id: "saffron-rice",
     name: "SAFFRON RICE",
     subtitle: "Fragrant Biryani Style",
     description: "Fluffy basmati rice infused with saffron, whole spices, and crispy fried onions — a royal side dish.",
-    image: PlaceHolderImages.find(img => img.id === "saffron-rice")?.imageUrl,
-    imageHint: "saffron rice"
+    image: PlaceHolderImages.find(img => img.id === "saffron-rice"),
   },
   {
-    id: 3,
+    id: "aloo-sabzi",
     name: "ALOO SABZI",
     subtitle: "Spiced Potato Delight",
     description: "Golden potatoes tossed with mustard seeds, curry leaves, and aromatic spices — simple yet irresistible.",
-    image: PlaceHolderImages.find(img => img.id === "aloo-sabzi")?.imageUrl,
-    imageHint: "potato curry"
+    image: PlaceHolderImages.find(img => img.id === "aloo-sabzi"),
   }
 ];
 
@@ -41,17 +38,18 @@ export function Menu() {
 
       <div className="grid md:grid-cols-3 gap-10">
         {menuItems.map((item) => (
-          <Card key={item.id} className="bg-card border-white/5 overflow-hidden group hover:border-primary/30 transition-all duration-500">
+          <Card key={item.id} className="bg-card border-white/5 overflow-hidden group hover:border-primary/30 transition-all duration-500 rounded-2xl">
             <div className="relative aspect-square overflow-hidden">
               {item.image && (
-                <img
-                  src={item.image}
+                <Image
+                  src={item.image.imageUrl}
                   alt={item.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  data-ai-hint={item.imageHint}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-ai-hint={item.image.imageHint}
                 />
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60" />
             </div>
             <CardContent className="p-8 space-y-4">
               <div className="space-y-1">

@@ -7,7 +7,7 @@ export function About() {
 
   return (
     <section id="about" className="w-full bg-black overflow-hidden">
-      <div className="grid md:grid-cols-2 min-h-[700px]">
+      <div className="grid md:grid-cols-2 min-h-[600px] md:min-h-[800px]">
         {/* Text Column */}
         <div className="flex flex-col justify-center py-20 px-8 md:px-16 lg:px-24 space-y-8 bg-black">
           <h2 className="font-headline text-5xl md:text-6xl lg:text-7xl font-bold text-primary">
@@ -26,20 +26,20 @@ export function About() {
           </div>
         </div>
         
-        {/* Image Column - Full Height with Rounded Corners */}
-        <div className="relative h-full min-h-[600px] w-full p-4 md:p-6 lg:p-8">
-          <div className="relative h-full w-full rounded-[2.5rem] overflow-hidden group border border-white/10 shadow-2xl">
+        {/* Image Column */}
+        <div className="relative h-full w-full min-h-[500px] md:min-h-full p-4 md:p-8 lg:p-12">
+          <div className="relative h-full w-full rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl">
             {heritageImage && (
               <Image
                 src={heritageImage.imageUrl}
                 alt={heritageImage.description}
                 fill
-                className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                className="object-cover transition-transform duration-1000 hover:scale-105"
                 data-ai-hint={heritageImage.imageHint}
                 priority
               />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-40" />
           </div>
         </div>
       </div>
