@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "saffron-rice",
+      "description": "3D rendered golden saffron rice bowl on black background",
+      "imageUrl": "https://picsum.photos/seed/saffron-rice/800/800",
+      "imageHint": "saffron rice"
+    },
+    {
+      "id": "aloo-sabzi",
+      "description": "3D rendered spiced potato curry in brass bowl on black background",
+      "imageUrl": "https://picsum.photos/seed/aloo-sabzi/800/800",
+      "imageHint": "potato curry"
+    },
+    {
+      "id": "chef-portrait",
+      "description": "Indian chef preparing food with passion",
+      "imageUrl": "https://picsum.photos/seed/chef/800/1000",
+      "imageHint": "indian chef"
+    }
+  ]
+}
